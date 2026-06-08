@@ -12,10 +12,32 @@
     <header>
         <h1>Knucklebones</h1>
     </header>
+		<p>
+			Knucklebones is a tactical dice-placing mini-game from the world of Cult of the Lamb. Your goal is to outsmart your opponent by scoring the most points before one of the boards is completely filled.
+		</p>
+	    <section class="rules">
+			<h2 class="title">Rules:</h2>
+		
+			<p class="rules-text">
+				1.The Grid: Both you and the bot have a 3 x 3 grid. On your turn, you roll a single six-sided die and must place it into one of your three columns.
+			</p>
+			<p class="rules-text">
+				2.Score Multipliers: Placing multiple dice with the same value in the same column multiplies their points! Two matching dice double their combined value (x times 2 times 2), and three matching dice triple it (x times 3 times 3).
+			</p>
+			<p class="rules-text">
+				3.Destroying Opponent's Dice: If you place a die in a column that matches the value of any dice in your opponent's corresponding column, those enemy dice are completely destroyed and removed from the board.
+			</p>
+			<p class="rules-text">
+				4.Strategic Depth: The game is all about strategy. You must decide whether to focus on building up your own columns for maximum points or to disrupt your opponent's progress by destroying their dice.
+			</p>
+			<p class="rules-text">
+				5.Winning the Match: The game ends immediately when either player fills all 9 slots on their grid. The player with the highest total score wins the game and takes the gold!
+			</p>
+		</section>
     <main>
         
         <section>
-            Bot   
+            <h3>Bot</h3>
             <div class="grid" data-player="bot">
                 <!--1-->
                 <div>
@@ -472,7 +494,7 @@
             <p>TOTAL SCORE: <span id="bot-total">0</span></p>
         </section>
         <section>
-            Gracz
+            <h3>Player</h3>
             <div class="grid" data-player="player">
                 <!--1-->
                 <div>
@@ -928,11 +950,12 @@
             <p>TOTAL SCORE: <span id="player-total">0</span></p>
         </section>
 
-        <button id="roll-button">Rzut kostką</button>    
+        <button id="roll-button">Roll Dice</button>    
         <div id='current-dice'>
             <img id="dice-image" alt = 'Kostka' draggable="true" style="width: 100px; height: 100px;display:none;">
         </div>    
-    </main>
+
+	</main>
     <footer>
         </footer>
     

@@ -3,6 +3,7 @@ body
     background-color: #1a1a1a;
     color: #f0f0f0;
     font-size: 30px;
+    font-family: 'Arial', sans-serif;
 }
 
 header{
@@ -71,4 +72,12 @@ div.grid div
 #player-total
 {
     user-select: none;
+}
+.rules-text
+{
+    margin-left: 90px;
+}
+h3
+{
+    margin-top: 20px;
 }

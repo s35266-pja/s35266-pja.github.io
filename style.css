@@ -1,0 +1,76 @@
+body
+{
+    background-color: #000000de;
+    color:aliceblue;
+}
+
+header
+{
+    font-size: 400%;
+    justify-content: center;
+    display: flex;
+    font-family: 'Arial Black', sans-serif;
+    color: #d32626;
+}
+.page-header
+{
+    font-size: 200%;
+    justify-content: center;
+    display: flex;
+    font-family: 'Arial Black', sans-serif;
+    color: #d32626;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+main 
+{
+    font-size: 180%;
+    font-family: 'Arial', sans-serif;
+
+
+}
+.title
+{
+    font-size: 200%;
+    font-family: 'Arial Black', sans-serif;
+    color: #d32626;
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer
+{
+    font-size: 150%;
+    justify-content: right;
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+.kaka
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.text
+{
+    margin-left: 100px;
+    margin-right: 100px;
+
+}.column {
+    width: 100%;
+}
+
+#one-who-waits
+{
+    color: #d32626;
+    font-style: italic;
+    font-weight: bold;
+}
+a
+{
+    color: #566fc0;
+    text-decoration: none;
+    text-decoration: underline;
+}
