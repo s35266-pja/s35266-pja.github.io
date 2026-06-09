@@ -58,7 +58,12 @@ function handleRoll(){
     }
     
 }
-
+rollButton.addEventListener('mouseenter', function(){
+    rollButton.style.backgroundColor = '#d32626';
+});
+rollButton.addEventListener('mouseleave', function() {
+    rollButton.style.backgroundColor = '';
+});
 rollButton.addEventListener('click', handleRoll);
 diceImage.addEventListener('dragstart', function(event){
     event.dataTransfer.setData('text/plain', currentDiceValue);
@@ -131,31 +136,7 @@ function cellsReset()
     playerCol2Score.textContent = 0
     playerCol3Score.textContent = 0
 }
-function drawDiceImage(cell, value) {
-    const oldImg = cell.querySelector('.dice-overlay');
-    if (oldImg) oldImg.remove();
-    cell.textContent = value;
 
-    if (parseInt(value) > 0) {
-        cell.style.color = 'transparent'; 
-        
-        const img = document.createElement('img');
-        img.src = value + '.png';
-        img.className = 'dice-overlay';
-        
-        img.style.position = 'absolute';
-        img.style.top = '10%';
-        img.style.left = '10%';
-        img.style.width = '80%';
-        img.style.height = '80%';
-        img.style.objectFit = 'contain';
-        img.style.pointerEvents = 'none'; 
-        
-        cell.appendChild(img);
-    } else {
-        cell.style.color = 'white';
-    }
-}
 
 cells.forEach(function(cell){
     cell.addEventListener('dragover', function(event){event.preventDefault();});
